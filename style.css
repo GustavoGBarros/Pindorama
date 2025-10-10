@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #F8F8FF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.site-header {
+    background-color: #ffffff;
+    padding: 0 24px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+
+    height: 80px;
+}
+
+.logo {
+    grid-column: 2;
+    justify-self: center;
+}
+
+.logo img {
+    height: 45px;
+    display: block;
+}
+
+.menu-icon {
+    grid-column: 1;
+    justify-self: start;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.menu-icon .bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    border-radius: 2px;
+}
