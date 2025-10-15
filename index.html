@@ -7,17 +7,17 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="menu-icon">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <header class="cabecalho">
+        <div class="icone-menu">
+            <span class="barra"></span>
+            <span class="barra"></span>
+            <span class="barra"></span>
         </div>
 
         <a href="/" class="logo">
@@ -25,9 +25,80 @@
         </a>
     </header>
 
-    <main style="padding: 2rem; text-align: center;">
-        <h1>Resto</h1>
+    <main>
+        <section class="secao-destaque">
+            <h1 class="titulo-destaque">
+                Cuidamos do seu <br>
+                animal com muito <br>
+                amor
+            </h1>
+            
+            <img class="imagem-destaque" src="images/animais.png" alt="Grupo de cães e gatos de vários portes e raças">
+            
+            <a href="#" class="botao-destaque">Entre em contato</a>
+        </section>
+
+        <section class="secao-sobre">
+            <h2 class="titulo-sobre">Quem somos?</h2>
+            
+            <img class="logo-sobre" src="images/quemsomos.png" alt="Ícone Pindorama Pets">
+            
+            <p class="marca-sobre"></p>
+            
+            <p class="descricao-sobre">
+                Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento.
+            </p>
+            
+            <p class="frase-sobre">
+                Cuidamos do seu animalzinho com amor!
+            </p>
+        </section>
+
+        <section class="secao-servicos">
+            <h2 class="titulo-servicos">
+                Nossos serviços visam o <br>
+                cuidado do seu pet
+            </h2>
+            
+            <p class="descricao-servicos">
+                Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet.
+            </p>
+            
+            <a href="#" class="botao-servicos">Agende uma consulta</a>
+            
+            <img class="silhueta-gato" src="images/silhuetagato.png" alt="Silhueta de um gato">
+        </section>
+
     </main>
 
-    </body>
+    <footer class="rodape-principal">
+        <div class="rodape-social">
+            <img src="images/sociais.png" alt="Ícones de redes sociais: WhatsApp, Instagram e Facebook">
+        </div>
+
+        <div class="rodape-links-container">
+            <div class="rodape-coluna">
+                <h3 class="rodape-titulo">Nossos Serviços</h3>
+                <ul class="rodape-lista">
+                    <li>Sobre Nós</li>
+                    <li>Consulta Veterinária</li>
+                    <li>Nossos Serviços</li>
+                </ul>
+            </div>
+            <div class="rodape-coluna">
+                <h3 class="rodape-titulo">Institucional</h3>
+                <ul class="rodape-lista">
+                    <li>Programa de Adoção</li>
+                    <li>Termos de Compromisso</li>
+                    <li>Unect Jr</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rodape-barra">
+            <p>UNECT JR – TODOS OS DIREITOS RESERVADOS</p>
+        </div>
+    </footer>
+
+</body>
 </html>
