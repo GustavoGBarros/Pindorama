@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="header"class="cabecalho">
+    <header id="header" class="cabecalho">
       <div class="icone-menu">
         <span class="barra"></span>
         <span class="barra"></span>
@@ -25,7 +25,7 @@
       <a href="/" class="logo">
         <img
           class="logo-mobile"
-          src="images/logo.png"
+          src="images/logo.svg"
           alt="Pindorama Pets Logo"
         />
         <img
@@ -36,10 +36,10 @@
       </a>
 
       <div class="links">
-      <a href="#header">Início</a>
-      <a>Serviços</a>
-      <a href="#secao-sobre">Sobre nós</a>
-      <a href="#footer">Contato</a>
+        <a href="#header">Início</a>
+        <a>Serviços</a>
+        <a href="#secao-sobre">Sobre nós</a>
+        <a href="#footer">Contato</a>
       </div>
     </header>
 
@@ -85,8 +85,8 @@
 
         <img
           class="imagem-destaque"
-          src="images/animais.png"
-          alt="Grupo de cães e gatos de vários portes e raças"
+          src="images/animais.svg"
+          alt="Cães, gatos e coelho"
         />
 
         <a href="#" class="botao-destaque">Entre em contato</a>
@@ -97,7 +97,7 @@
 
         <img
           class="logo-sobre"
-          src="images/quemsomos.png"
+          src="images/quemsomos.svg"
           alt="Ícone Pindorama Pets"
         />
 
@@ -127,17 +127,151 @@
 
         <img
           class="silhueta-gato"
-          src="images/silhuetagato.png"
+          src="images/silhuetagato.svg"
           alt="Silhueta de um gato"
         />
       </section>
-    </main>
+
+      <section class="secao-profissionais">
+        <h2 class="titulo-profissionais">Nossos profissionais</h2>
+
+        <div class="grid-profissionais">
+          <div class="card-profissional">
+            <img
+              src="images/carlos.svg"
+              alt="Foto do Dr. Carlos De Souza"
+              class="foto-profissional"
+            />
+            <h3 class="nome-profissional">Carlos De Souza</h3>
+            <p class="especialidade-profissional">Cirurgia Veterinária</p>
+          </div>
+
+          <div class="card-profissional">
+            <img
+              src="images/joao.svg"
+              alt="Foto do Dr. João Paulo"
+              class="foto-profissional"
+            />
+            <h3 class="nome-profissional">João Paulo</h3>
+            <p class="especialidade-profissional">Dermatologia Veterinária</p>
+          </div>
+
+          <div class="card-profissional">
+            <img
+              src="images/josesilva.svg"
+              alt="Foto do Dr. José da Silva"
+              class="foto-profissional"
+            />
+            <h3 class="nome-profissional">José da Silva</h3>
+            <p class="especialidade-profissional">Patologia</p>
+          </div>
+
+          <div class="card-profissional">
+            <img
+              src="images/josealdo.svg"
+              alt="Foto do Dr. José Aldo"
+              class="foto-profissional"
+            />
+            <h3 class="nome-profissional">José Aldo</h3>
+            <p class="especialidade-profissional">Anestesiologia</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-avaliacoes">
+        <h2 class="titulo-avaliacoes">Avaliações (9)</h2>
+
+        <div class="lista-avaliacoes">
+          <div class="card-avaliacao">
+            <img
+              src="images/carlosalberto.svg"
+              alt="Foto de Carlos Alberto"
+              class="foto-avaliacao"
+            />
+            <div class="conteudo-avaliacao">
+              <div class="estrelas-avaliacao">★★★★★</div>
+              <h3 class="nome-avaliacao">Carlos Alberto</h3>
+              <p class="texto-avaliacao">
+                Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa
+                com meu pet.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-avaliacao">
+            <img
+              src="images/neymar.svg"
+              alt="Foto de Neymar Jr"
+              class="foto-avaliacao"
+            />
+            <div class="conteudo-avaliacao">
+              <div class="estrelas-avaliacao">★★★★★</div>
+              <h3 class="nome-avaliacao">Neymar Jr</h3>
+              <p class="texto-avaliacao">
+                Não poderia estar mais feliz com o serviço desta clínica.
+                Profissionais qualificados e atenciosos.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-avaliacao">
+            <img
+              src="images/josseana.svg"
+              alt="Foto de Josseana da Silva"
+              class="foto-avaliacao"
+            />
+            <div class="conteudo-avaliacao">
+              <div class="estrelas-avaliacao">★★★★★</div>
+              <h3 class="nome-avaliacao">Josseana da Silva</h3>
+              <p class="texto-avaliacao">
+                Excelente clínica! Desde o primeiro contato, fui atendido com
+                profissionalismo e gentileza.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="paginacao-avaliacoes">
+          <span class="pagina-atual">1</span>
+          <a href="#" class="botao-pagina-proxima" aria-label="Próxima página"
+            >&gt;</a
+          >
+        </div>
+      </section>
+
+      <section class="secao-contato">
+        <h2 class="titulo-contato">Entre em contato</h2>
+        <form class="formulario-contato" action="#" method="POST">
+          <div class="campo-form">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+
+          <div class="campo-form">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" required />
+          </div>
+
+          <div class="campo-form">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="campo-form">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="botao-enviar">ENVIAR</button>
+        </form>
+      </section>
+      </main>
 
     <footer id="footer" class="rodape-principal">
       <div class="rodape-social">
         <img
-          src="images/sociais.png"
-          alt="Ícones de redes sociais: WhatsApp, Instagram e Facebook"
+          src="images/sociais.svg"
+          alt="Ícones das redes sociais"
         />
       </div>
 
