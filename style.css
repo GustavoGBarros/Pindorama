@@ -159,8 +159,7 @@ QUEM SOMOS
 .secao-sobre-container {
   background-color: #89c5d5;
   background-image: url('images/animal-pattern.svg');
-  background-size: cover;
-  background-position: center;
+  background-repeat: repeat;
   display: flex;
   justify-content: center;
 }
@@ -206,6 +205,10 @@ QUEM SOMOS
   margin: 0 0 24px 0;
 }
 
+.descricao-sobre-desktop {
+  display: none;
+}
+
 .frase-sobre {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -222,8 +225,7 @@ NOSSOS SERVIÇOS
   position: relative;
   background-color: #63b3c9;
   background-image: url('images/animal-pattern.svg');
-  background-size: cover;
-  background-position: center;
+  background-repeat: repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,6 +233,11 @@ NOSSOS SERVIÇOS
   padding: 40px 24px 80px;
   color: #063643;
   overflow: hidden;
+}
+
+.servico-gato,
+.servico-cachorro {
+  display: none;
 }
 
 .titulo-servicos {
@@ -288,6 +295,7 @@ NOSSOS SERVIÇOS
 PROFISSIONAIS
 */
 .secao-profissionais {
+  background-color: #f8f8ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -306,6 +314,10 @@ PROFISSIONAIS
   box-sizing: border-box;
 }
 
+.titulo-profissionais-desktop {
+  display: none;
+}
+
 .grid-profissionais {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -314,7 +326,7 @@ PROFISSIONAIS
   max-width: 640px;
   padding: 40px 24px;
   box-sizing: border-box;
-  background-color: #fafdff;
+  background-color: #f8f8ff;
 }
 
 .card-profissional {
@@ -330,7 +342,7 @@ PROFISSIONAIS
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #06364377;
 }
 
 .nome-profissional {
@@ -345,7 +357,7 @@ PROFISSIONAIS
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #333;
+  color: #063643;
   margin: 0;
 }
 
@@ -377,6 +389,7 @@ AVALIAÇÕES
 .card-avaliacao {
   display: flex;
   align-items: flex-start;
+  align-items: center;
   gap: 16px;
 }
 
@@ -385,6 +398,7 @@ AVALIAÇÕES
   height: 64px;
   border-radius: 50%;
   object-fit: cover;
+  border: 1px solid #00000015;
   flex-shrink: 0;
 }
 
@@ -395,13 +409,12 @@ AVALIAÇÕES
 .estrelas-avaliacao {
   color: #f5c518;
   font-size: 20px;
-  margin-bottom: 8px;
   letter-spacing: 3px;
 }
 
 .nome-avaliacao {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   color: #063643;
   margin: 0 0 4px 0;
@@ -411,7 +424,7 @@ AVALIAÇÕES
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #333;
+  color: #063643;
   margin: 0;
   line-height: 1.5;
 }
@@ -422,6 +435,10 @@ AVALIAÇÕES
   align-items: center;
   gap: 16px;
   margin-top: 32px;
+}
+
+.paginacao-avaliacoes-desktop {
+  display: none;
 }
 
 .pagina-atual {
@@ -625,10 +642,6 @@ FORMULÁRIO
   display: none;
 }
 
-.descricao-sobre {
-  display: none;
-}
-
 /* A partir de 768px, inverte: mostra o desktop e esconde o mobile (Endpoint) */
 @media (min-width: 768px) {
   .logo-mobile {
@@ -744,6 +757,10 @@ FORMULÁRIO
     display: none;
   }
 
+  .descricao-sobre-desktop {
+    display: block;
+  }
+
   .logo-sobre-desktop {
     display: block;
   }
@@ -764,11 +781,180 @@ FORMULÁRIO
   }
 
   .secao-sobre p {
-    max-width: 700px;
+    max-width: 770px;
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
   }
 
   .titulo-sobre {
     font-size: 24px;
+  }
+
+  .secao-servicos {
+    display: none;
+  }
+
+  .secao-servicos-desktop {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #063643;
+  }
+
+  .servico-gato,
+  .servico-cachorro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #63b3c9;
+    background-image: url('images/animal-pattern.svg');
+    background-repeat: repeat;
+    padding: 52px 0 25px;
+  }
+
+  .servico-cachorro {
+    padding: 25px 0;
+    background-color: #89c5d5;
+  }
+
+  .servico-gato h1 {
+    margin: 0;
+    max-width: 64dvw;
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .servico-gato p,
+  .servico-cachorro p {
+    max-width: 770px;
+  }
+
+  .servico-cachorro p {
+    margin-top: 58px;
+  }
+
+  .conteudo-servico-gato,
+  .conteudo-servico-cachorro {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 64dvw;
+    gap: 20px;
+  }
+
+  .conteudo-servico-gato {
+    margin-top: 50px;
+  }
+
+  .conteudo-servico-gato div {
+    flex: 1;
+  }
+
+  .secao-profissionais {
+    background-color: #e2f5fa;
+  }
+
+  .titulo-profissionais {
+    display: none;
+  }
+
+  .titulo-profissionais-desktop {
+    display: block;
+  }
+
+  .secao-profissionais-container {
+    margin-top: 48px;
+    width: 100%;
+    max-width: 64dvw;
+    background-color: #f8f8ff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .secao-profissionais-container h1 {
+    font-family: 'Poppins', sans-serif;
+    margin: 40px 80px 0;
+    font-size: 24px;
+    color: #063643;
+    text-align: left;
+  }
+
+  .grid-profissionais {
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 40px 50px;
+    border-radius: 6px;
+  }
+
+  .foto-profissional {
+    margin-bottom: 6px;
+  }
+
+  .secao-avaliacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo-avaliacoes {
+    text-align: left;
+    width: 100%;
+    max-width: 64dvw;
+    padding: 0 80px;
+    font-size: 24px;
+  }
+
+  .lista-avaliacoes {
+    width: 100%;
+    max-width: 64dvw;
+    padding: 0 80px;
+    gap: 12px;
+  }
+
+  .card-avaliacao {
+    position: relative;
+    padding-bottom: 26px;
+  }
+
+  .card-avaliacao::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 2px;
+    background-color: #00000015;
+    margin-top: 12px;
+  }
+
+  .card-avaliacao:last-child::after {
+    display: none;
+  }
+
+  .paginacao-avaliacoes {
+    display: none;
+  }
+
+  .paginacao-avaliacoes-desktop {
+    width: 100%;
+    max-width: 64dvw;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .pagina-atual {
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+    font-size: 18px;
+  }
+
+  .paginacao-avaliacoes-desktop a {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #063643;
+    border-radius: 8px;
   }
 }
