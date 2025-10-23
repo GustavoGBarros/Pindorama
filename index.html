@@ -15,31 +15,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="header" class="cabecalho">
-      <div class="icone-menu">
-        <span class="barra"></span>
-        <span class="barra"></span>
-        <span class="barra"></span>
-      </div>
+    <header id="header" class="cabecalho-container">
+      <div class="cabecalho">
+        <div class="icone-menu">
+          <span class="barra"></span>
+          <span class="barra"></span>
+          <span class="barra"></span>
+        </div>
 
-      <a href="/" class="logo">
-        <img
-          class="logo-mobile"
-          src="images/logo.svg"
-          alt="Pindorama Pets Logo"
-        />
-        <img
-          class="logo-desktop"
-          src="images/logo-horizontal.svg"
-          alt="Pindorama Pets Logo"
-        />
-      </a>
+        <a href="/" class="logo">
+          <img
+            class="logo-mobile"
+            src="images/logo.svg"
+            alt="Pindorama Pets Logo"
+          />
+          <img
+            class="logo-desktop"
+            src="images/logo-horizontal.svg"
+            alt="Pindorama Pets Logo"
+          />
+        </a>
 
-      <div class="links">
-        <a href="#header">Início</a>
-        <a>Serviços</a>
-        <a href="#secao-sobre">Sobre nós</a>
-        <a href="#footer">Contato</a>
+        <div class="links">
+          <a href="#header">Início</a>
+          <a>Serviços</a>
+          <a href="#secao-sobre">Sobre nós</a>
+          <a href="#footer">Contato</a>
+        </div>
       </div>
     </header>
 
@@ -77,39 +79,60 @@
             </defs>
           </svg>
         </div>
-        <h1 class="titulo-destaque">
-          Cuidamos do seu <br />
-          animal com muito <br />
-          amor
-        </h1>
 
-        <img
-          class="imagem-destaque"
-          src="images/animais.svg"
-          alt="Cães, gatos e coelho"
-        />
+        <div class="conteudo-destaque">
+          <h1 class="titulo-destaque">
+            Cuidamos do seu Pet com <br />
+            animal com muito <br />
+            amor
+          </h1>
+          <h1 class="titulo-desktop">
+            Cuidando do Seu Pet com <br />
+            Profissionalismo e Carinho
+          </h1>
+          <div class="imagem-botao-container">
+            <div class="imagem-destaque">
+              <img src="images/animais.png" alt="Cães, gatos e coelho" />
+            </div>
 
-        <a href="#" class="botao-destaque">Entre em contato</a>
+            <a href="#" class="botao-destaque">Entre em contato</a>
+          </div>
+
+          <img class="riscos-destaque" src="images/riscos.svg" alt="Riscos" />
+        </div>
       </section>
 
-      <section id="secao-sobre" class="secao-sobre">
-        <h2 class="titulo-sobre">Quem somos?</h2>
+      <section id="secao-sobre" class="secao-sobre-container">
+        <div class="secao-sobre">
+          <img
+            src="images/quemsomos-desktop.svg"
+            alt="Ícone Pindorama Pets"
+            class="logo-sobre-desktop"
+          />
 
-        <img
-          class="logo-sobre"
-          src="images/quemsomos.svg"
-          alt="Ícone Pindorama Pets"
-        />
+          <div>
+            <h2 class="titulo-sobre">Quem somos?</h2>
+            <img
+              class="logo-sobre"
+              src="images/quemsomos.svg"
+              alt="Ícone Pindorama Pets"
+            />
+            <p>
+              Nossa clínica veterinária é comprometida com o cuidado e bem-estar
+              de cada pet, com uma equipe dedicada e instalações modernas,
+              buscamos garantir saúde e conforto em cada atendimento. Cuidamos
+              do seu animalzinho como se fosse nosso!
+            </p>
+          </div>
 
-        <p class="marca-sobre"></p>
+          <p class="descricao-sobre">
+            Nossa clínica veterinária é comprometida com o cuidado e bem-estar
+            de cada pet, com uma equipe dedicada e instalações modernas,
+            buscamos garantir saúde e conforto em cada atendimento.
+          </p>
 
-        <p class="descricao-sobre">
-          Nossa clínica veterinária é comprometida com o cuidado e bem-estar de
-          cada pet, com uma equipe dedicada e instalações modernas, buscamos
-          garantir saúde e conforto em cada atendimento.
-        </p>
-
-        <p class="frase-sobre">Cuidamos do seu animalzinho com amor!</p>
+          <p class="frase-sobre">Cuidamos do seu animalzinho com amor!</p>
+        </div>
       </section>
 
       <section class="secao-servicos">
@@ -192,8 +215,8 @@
               <div class="estrelas-avaliacao">★★★★★</div>
               <h3 class="nome-avaliacao">Carlos Alberto</h3>
               <p class="texto-avaliacao">
-                Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa
-                com meu pet.
+                Atendimento excepcional! A equipe foi muito cuidadosa e
+                atenciosa com meu pet.
               </p>
             </div>
           </div>
@@ -259,20 +282,22 @@
 
           <div class="campo-form">
             <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              required
+            ></textarea>
           </div>
 
           <button type="submit" class="botao-enviar">ENVIAR</button>
         </form>
       </section>
-      </main>
+    </main>
 
     <footer id="footer" class="rodape-principal">
       <div class="rodape-social">
-        <img
-          src="images/sociais.svg"
-          alt="Ícones das redes sociais"
-        />
+        <img src="images/sociais.svg" alt="Ícones das redes sociais" />
       </div>
 
       <div class="rodape-links-container">
