@@ -502,7 +502,7 @@ FORMULÁRIO
 }
 
 .campo-form label {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: #063643;
@@ -639,6 +639,29 @@ FORMULÁRIO
 }
 
 .logo-sobre-desktop {
+  display: none;
+}
+
+.localizacao {
+  display: none;
+  background-color: #f8f8ff;
+}
+
+.conteudo-contato {
+  width: 100%;
+  display: flex;
+  background-color: #fafdff;
+}
+
+.rodape-social h2 {
+  display: none;
+}
+
+.quantidade-avaliacoes::before {
+  content: '9';
+}
+
+.carrossel-destaque {
   display: none;
 }
 
@@ -956,5 +979,192 @@ FORMULÁRIO
     padding: 8px 12px;
     border: 1px solid #063643;
     border-radius: 8px;
+  }
+
+  .secao-contato {
+    background-color: #e2f5fa;
+  }
+
+  .localizacao {
+    display: block;
+    border-radius: 6px 0 0 6px;
+    border-right: 1px solid rgba(6, 54, 67, 0.4);
+    padding: 50px 20px;
+  }
+
+  .conteudo-contato {
+    width: 100%;
+    max-width: 64dvw;
+    border-radius: 6px;
+    border: 1px solid rgba(6, 54, 67, 0.4);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .localizacao h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #063643;
+    margin: 0;
+  }
+
+  .localizacao p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    color: #063643;
+    margin-top: 40px;
+  }
+
+  .mapa-container {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .localizacao div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  .localizacao div p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .conteudo-contato form {
+    margin: 50px 40px;
+  }
+
+  .mapa-container {
+  }
+
+  .campo-form label {
+    font-size: 20px;
+  }
+
+  .botao-enviar {
+    max-width: 144px;
+  }
+
+  .rodape-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodape-principal {
+    width: 100%;
+    max-width: 64dvw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: #f8f8ff;
+    padding: 36px 0 70px;
+  }
+
+  .rodape-social {
+    flex-direction: column;
+    justify-content: start;
+    padding: 0;
+    background-color: #f8f8ff;
+  }
+
+  .rodape-social img {
+    width: 148px;
+    margin-top: 12px;
+  }
+
+  .rodape-social h2 {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #063643;
+    margin: 0;
+  }
+
+  .rodape-links-container {
+    background-color: #f8f8ff;
+    padding: 0;
+    gap: 60px;
+  }
+
+  .rodape-lista li {
+    font-size: 16px;
+  }
+
+  .rodape-lista li a {
+    text-decoration: none;
+    color: #063643;
+  }
+
+  .rodape-titulo {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .rodape-barra p {
+    font-weight: bold;
+  }
+
+  .quantidade-avaliacoes::before {
+    content: '34';
+  }
+
+  .carrossel-destaque {
+    width: 100%;
+    max-width: 64dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 30px;
+  }
+
+  .carrossel-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .carrossel-chevron {
+    width: 24px;
+    cursor: pointer;
+  }
+
+  .carrossel-chevron:last-child {
+    transform: rotate(180deg);
+  }
+
+  .carrossel-imagem img {
+    width: 100%;
+  }
+
+  .carrossel-indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 12px;
+  }
+
+  .carrossel-indicador {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #a3a3a3;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .carrossel-indicador-ativo {
+    background-color: #63b3c9;
   }
 }

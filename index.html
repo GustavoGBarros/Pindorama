@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -38,7 +38,7 @@
 
         <div class="links">
           <a href="#header">Início</a>
-          <a>Serviços</a>
+          <a href="#secao-servicos">Serviços</a>
           <a href="#secao-sobre">Sobre nós</a>
           <a href="#footer">Contato</a>
         </div>
@@ -100,6 +100,35 @@
 
           <img class="riscos-destaque" src="images/riscos.svg" alt="Riscos" />
         </div>
+
+        <div class="carrossel-destaque">
+          <div class="carrossel-item">
+            <img
+              id="carrossel-chevron-esquerda"
+              class="carrossel-chevron"
+              src="images/chevron.svg"
+              alt="Seta para a esquerda"
+            />
+            <div class="carrossel-imagem">
+              <img
+                id="carrossel-imagem"
+                src="images/banner-1.png"
+                alt="Cães, gatos e coelho"
+              />
+            </div>
+            <img
+              id="carrossel-chevron-direita"
+              class="carrossel-chevron"
+              src="images/chevron.svg"
+              alt="Seta para a direita"
+            />
+          </div>
+          <div class="carrossel-indicadores">
+            <div class="carrossel-indicador carrossel-indicador-ativo"></div>
+            <div class="carrossel-indicador"></div>
+            <div class="carrossel-indicador"></div>
+          </div>
+        </div>
       </section>
 
       <section id="secao-sobre" class="secao-sobre-container">
@@ -120,7 +149,8 @@
             <p class="descricao-sobre-desktop">
               Nossa clínica veterinária é comprometida com o cuidado e bem-estar
               de cada pet, com uma equipe dedicada e instalações modernas,
-              buscamos garantir saúde e conforto em cada atendimento. 
+              buscamos garantir saúde e conforto em cada atendimento. Cuidamos
+              do seu animalzinho como se fosse nosso!
             </p>
           </div>
 
@@ -154,7 +184,7 @@
         />
       </section>
 
-      <section class="secao-servicos-desktop">
+      <section id="secao-servicos" class="secao-servicos-desktop">
         <div class="servico-gato">
           <h1>Nossos serviços</h1>
           <div class="conteudo-servico-gato">
@@ -240,7 +270,9 @@
       </section>
 
       <section class="secao-avaliacoes">
-        <h2 class="titulo-avaliacoes">Avaliações (9)</h2>
+        <h2 class="titulo-avaliacoes">
+          Avaliações (<span class="quantidade-avaliacoes"></span>)
+        </h2>
 
         <div class="lista-avaliacoes">
           <div class="card-avaliacao">
@@ -319,65 +351,106 @@
 
       <section class="secao-contato">
         <h2 class="titulo-contato">Entre em contato</h2>
-        <form class="formulario-contato" action="#" method="POST">
-          <div class="campo-form">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" required />
+        <div class="conteudo-contato">
+          <div class="localizacao">
+            <h2>Localização</h2>
+            <p>
+              Rua - Fulano de tal, 9999 <br />
+              CEP 99999-999 <br />
+              Pindorama/SP
+            </p>
+            <div class="mapa-container">
+              <iframe
+                width="100%"
+                height="100%"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-48.91599655151368,-21.19098067066877,-48.90180587768555,-21.18321383670791&amp;layer=mapnik"
+              ></iframe>
+            </div>
+            <div>
+              <img src="images/icon-whatsapp.svg" alt="" />
+              <p>(99) 99999-9999</p>
+            </div>
+            <div>
+              <img src="images/icon-instagram.svg" alt="" />
+              <p>@PindoramaClinica</p>
+            </div>
+            <div>
+              <img src="images/icon-face.svg" alt="" />
+              <p>PindoramaClinica</p>
+            </div>
           </div>
+          <form class="formulario-contato" action="#" method="POST">
+            <div class="campo-form">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" required />
+            </div>
 
-          <div class="campo-form">
-            <label for="sobrenome">Sobrenome</label>
-            <input type="text" id="sobrenome" name="sobrenome" required />
-          </div>
+            <div class="campo-form">
+              <label for="sobrenome">Sobrenome</label>
+              <input type="text" id="sobrenome" name="sobrenome" required />
+            </div>
 
-          <div class="campo-form">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required />
-          </div>
+            <div class="campo-form">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required />
+            </div>
 
-          <div class="campo-form">
-            <label for="mensagem">Mensagem</label>
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              rows="5"
-              required
-            ></textarea>
-          </div>
+            <div class="campo-form">
+              <label for="mensagem">Mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                required
+              ></textarea>
+            </div>
 
-          <button type="submit" class="botao-enviar">ENVIAR</button>
-        </form>
+            <button type="submit" class="botao-enviar">ENVIAR</button>
+          </form>
+        </div>
       </section>
     </main>
 
-    <footer id="footer" class="rodape-principal">
-      <div class="rodape-social">
-        <img src="images/sociais.svg" alt="Ícones das redes sociais" />
-      </div>
-
-      <div class="rodape-links-container">
-        <div class="rodape-coluna">
-          <h3 class="rodape-titulo">Nossos Serviços</h3>
-          <ul class="rodape-lista">
-            <li>Sobre Nós</li>
-            <li>Consulta Veterinária</li>
-            <li>Nossos Serviços</li>
-          </ul>
+    <footer id="footer" class="rodape-container">
+      <div class="rodape-principal">
+        <div class="rodape-social">
+          <h2>NOSSOS CONTATOS</h2>
+          <img src="images/sociais.svg" alt="Ícones das redes sociais" />
         </div>
-        <div class="rodape-coluna">
-          <h3 class="rodape-titulo">Institucional</h3>
-          <ul class="rodape-lista">
-            <li>Programa de Adoção</li>
-            <li>Termos de Compromisso</li>
-            <li>Unect Jr</li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="rodape-barra">
-        <p>UNECT JR – TODOS OS DIREITOS RESERVADOS</p>
+        <div class="rodape-links-container">
+          <div class="rodape-coluna">
+            <h3 class="rodape-titulo">Nossos Serviços</h3>
+            <ul class="rodape-lista">
+              <li><a href="#secao-sobre">Sobre Nós</a></li>
+              <li>Consulta Veterinária</li>
+              <li><a href="#secao-servicos">Nossos Serviços</a></li>
+            </ul>
+          </div>
+          <div class="rodape-coluna">
+            <h3 class="rodape-titulo">Institucional</h3>
+            <ul class="rodape-lista">
+              <li>Programa de Adoção</li>
+              <li>Termos de Compromisso</li>
+              <li>
+                <a href="https://unect.com.br" target="_blank">Unect Jr</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#header" class="rodape-logo">
+          <img src="images/logo-footer.svg" alt="Logo Pindorama Pets" />
+        </a>
       </div>
     </footer>
+    <div class="rodape-barra">
+      <p>UNECT JR – TODOS OS DIREITOS RESERVADOS</p>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
-
