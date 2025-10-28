@@ -291,8 +291,7 @@ NOSSOS SERVIÇOS
   z-index: 0;
 }
 
-/* 
-PROFISSIONAIS
+/* PROFISSIONAIS
 */
 .secao-profissionais {
   background-color: #f8f8ff;
@@ -362,7 +361,7 @@ PROFISSIONAIS
 }
 
 /*
-AVALIAÇÕES
+AVALIACAO
 */
 .secao-avaliacoes {
   background-color: #e2f5fa;
@@ -468,6 +467,26 @@ AVALIAÇÕES
   background-color: #89c5d5;
 }
 
+.botao-pagina-anterior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #a9dceb;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #063643;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-pagina-anterior:hover {
+  background-color: #89c5d5;
+}
+
 /*
 FORMULÁRIO
 */
@@ -559,6 +578,7 @@ FORMULÁRIO
 
 /* RODAPÉ (FOOTER)
 */
+
 .rodape-principal {
   width: 100%;
 }
@@ -589,7 +609,7 @@ FORMULÁRIO
   color: #063643;
   margin: 0 0 16px 0;
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -610,8 +630,17 @@ FORMULÁRIO
   text-transform: uppercase;
 }
 
+.rodape-lista li a {
+  text-decoration: none;
+  color: #063643;
+}
+
 .rodape-lista li:last-child {
   margin-bottom: 0;
+}
+
+.rodape-logo {
+  display: none;
 }
 
 .rodape-barra {
@@ -1043,9 +1072,6 @@ FORMULÁRIO
     margin: 50px 40px;
   }
 
-  .mapa-container {
-  }
-
   .campo-form label {
     font-size: 20px;
   }
@@ -1090,7 +1116,12 @@ FORMULÁRIO
     margin: 0;
   }
 
+  .rodape-logo {
+    display: block;
+  }
+
   .rodape-links-container {
+    display: flex;
     background-color: #f8f8ff;
     padding: 0;
     gap: 60px;
@@ -1098,11 +1129,6 @@ FORMULÁRIO
 
   .rodape-lista li {
     font-size: 16px;
-  }
-
-  .rodape-lista li a {
-    text-decoration: none;
-    color: #063643;
   }
 
   .rodape-titulo {
