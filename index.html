@@ -102,19 +102,44 @@
         </div>
 
         <div class="carrossel-destaque">
-          <div class="carrossel-item">
+          <div class="carrossel-container">
             <img
               id="carrossel-chevron-esquerda"
               class="carrossel-chevron"
               src="images/chevron.svg"
               alt="Seta para a esquerda"
             />
-            <div class="carrossel-imagem">
-              <img
-                id="carrossel-imagem"
-                src="images/banner-1.png"
-                alt="Cães, gatos e coelho"
-              />
+            <div class="carrossel-slides">
+              <div class="carrossel-slide" id="carrossel-slide-0">
+                <div>
+                  <h2>Campanha de vacinação</h2>
+                  <p>Nos dias 19 a 28 de novembro</p>
+                  <a href="#" class="botao-campanha">Saiba mais</a>
+                </div>
+              </div>
+              <div class="carrossel-slide" id="carrossel-slide-1">
+                <div>
+                  <h2>Campanha de adoção</h2>
+                  <p>
+                    Dê um lar cheio de amor a quem só quer te fazer feliz!
+                    <br />
+                    Adote um amigo de quatro patas e transforme sua <br />
+                    vida e a dele.
+                  </p>
+                  <a href="#" class="botao-campanha">Saiba mais</a>
+                </div>
+              </div>
+              <div class="carrossel-slide" id="carrossel-slide-2">
+                <div>
+                  <h2>Banho e tosa: cuidado e saúde para seu pet</h2>
+                  <p>
+                    Nossa clínica dispõe do serviço de higiene para seu Pet
+                    <br />
+                    permanecer limpo, cheiroso e longe de parasitas.
+                  </p>
+                  <a href="#" class="botao-campanha">Saiba mais</a>
+                </div>
+              </div>
             </div>
             <img
               id="carrossel-chevron-direita"
@@ -268,7 +293,7 @@
           </div>
         </div>
       </section>
-      
+
       <section class="secao-avaliacoes">
         <h2 class="titulo-avaliacoes">
           Avaliações (<span class="quantidade-avaliacoes"></span>)
@@ -285,10 +310,32 @@
             >&gt;</a
           >
         </div>
-        
+
         <div class="paginacao-avaliacoes-desktop">
+          <a
+            href="#"
+            class="botao-pagina-anterior-desktop"
+            aria-label="Página anterior"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.85417 8.16669L8.52091 12.8334L7.33341 14L0.666748 7.33335L7.33341 0.666687L8.52091 1.83335L3.85417 6.50002L14 6.50002L14 8.16669L3.85417 8.16669Z"
+                fill="#063643"
+              />
+            </svg>
+          </a>
           <span class="pagina-atual">1</span>
-          <a href="#" aria-label="Próxima página">
+          <a
+            href="#"
+            class="botao-pagina-proxima-desktop"
+            aria-label="Próxima página"
+          >
             <svg
               width="14"
               height="14"
